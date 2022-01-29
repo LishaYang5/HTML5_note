@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!-- https://www.bilibili.com/video/BV1x4411V75C?p=12&spm_id_from=pageDriver -->
+
+    <!-- <form action="/action.php" method="post">Name:  -->
+    <form action="3. images.html" method="get">Name: 
+        <input name="name" type="text" /> 
+        <p> Password: <input type="password" name="pwd"></p>
+        <br /> Age: <input max="99" min="1" name="age" step="1" type="number" value="18" /> <br />
+        <select name="gender">
+        <option selected="selected" value="male">Male</option>
+        <option value="female">Female</option>
+        </select><br /> 
+        <input checked="checked" name="newsletter" type="radio" value="daily" /> 
+        Daily 
+        <input name="newsletter" type="radio" value="weekly" /> Weekly<br /> 
+        <textarea cols="20" name="comments" rows="5">Comment</textarea><br /> 
+        <label><input name="terms" type="checkbox" value="tandc" />Accept terms</label> <br /> 
+        <input type="submit" value="Submit" /></form>
+
+--------------------------Break---------------------------
+
+<!-- type: text, password, checkbox, radio, submit, reset, file, hidden, image, button 
+maxlength
+value:set defalt
+size:
+radio (single selection): selection, need name to sigle select, make group
+checkbox（multy selection）: value
+-->
+
+
+
+        <form action="1. lishablog.html" method="post">
+        <!-- input type = "text" -->
+        <p> Name: <input type="text" name="username"> </p>
+        
+        <!-- input type = "password"-->
+        <p> Password: <input type="password" name="pwd"></p>
+
+        <p>
+            <input type="submit">
+            <input type="reset">
+        </p>
+
+        <p>
+            <input type="radio" value="a" name="1"> a
+            <input type="radio" value="b" name="1" checked> b
+        </p>
+
+        </form>
+
+--------------------------Break---------------------------
+<p>
+    <select name="xialakuang" id="1">
+        <option value="1">1</option>
+        <option value="1">2</option>
+        <option value="1">3</option>
+        <option value="1" selected >4</option>
+    </select>
+</p>
+--------------------------Break---------------------------
+<br>
+write some thing here:
+<textarea name="text" id="2" cols="30" rows="10"></textarea>
+<br>
+--------------------------Break---------------------------
+files:
+<p>
+    <input type="file" name="files">
+    <input type="button" value="upload" name="upload">
+    <input type="reset" value="reset">
+
+
+</p>
+
+
+</body>
+</html>
